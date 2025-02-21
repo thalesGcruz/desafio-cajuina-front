@@ -1,4 +1,4 @@
-import { useSession, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import { FC } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
 import UserInfo from "./user-info";
