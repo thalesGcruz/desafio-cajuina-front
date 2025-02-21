@@ -76,8 +76,8 @@ function useTodoList() {
   };
 
   const filteredTasks = tasks.filter((task: Task) => {
-    if (filter === "pending") return !task.status;
-    if (filter === "completed") return task.status;
+    if (filter === "pending") return task.status === "pending";
+    if (filter === "completed") return task.status === "completed";
     return true;
   });
 
